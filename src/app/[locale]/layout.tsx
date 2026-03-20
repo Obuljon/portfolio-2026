@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import { Linkedin, Github, Send, Mail } from "lucide-react";
-import { NextIntlClientProvider, useTranslations } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { StoreProvider } from "../StoreProvider";
 import "../globals.css";
-import Link from "next/link";
 import OpenHamburger from "@/components/OpenHamburger";
 import Hamburger from "@/components/Hamburger";
 import { LanguageSelector } from "../../components/LanguageSelector";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { routing } from "@/i18n/routing";
-import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import PersonNav from "@/components/PersonNav";
 import { HydrationGuard } from "@/components/HydrationGuard";
@@ -39,10 +37,9 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: (typeof routing.locales)[number] };
+  params: Promise<{ locale: string }>;
 }) {
-  const resolvedParams = await params; // ← Await here
-  const { locale } = resolvedParams;
+  const { locale } = await params;
 
   const messages = await getMessages();
 

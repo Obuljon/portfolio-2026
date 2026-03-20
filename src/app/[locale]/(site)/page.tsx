@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import type { Metadata } from "next";
-import { ArrowRight, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import { ImageWithFallback } from "../../../components/figma/ImageWithFallback";
 import PersonAbount from "@/components/PersonAbount";
 import MobilePortrait from "@/components/ MobilePortrait";
