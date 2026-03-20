@@ -1,5 +1,12 @@
-import { getRequestConfig } from 'next-intl/server';
-import { routing } from './routing';
+import { getRequestConfig } from "next-intl/server";
+import { routing } from "./routing";
+
+// ✅ Statik import — Turbopack buni to'g'ri bundle qiladi
+const messages = {
+  uz: () => import("../messages/uz"),
+  en: () => import("../messages/en"),
+  ru: () => import("../messages/ru"),
+};
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
@@ -10,6 +17,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default
+    messages: (await messages[locale as keyof typeof messages]()).default,
   };
 });

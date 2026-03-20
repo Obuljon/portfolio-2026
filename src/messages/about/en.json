@@ -1,0 +1,18 @@
+{
+  "title": "About",
+  "content": "I’m a Full Stack Developer based in Uzbekistan with strong experience in both frontend and backend development. I work with modern technologies like: React, Next.js, NestJS, Node.js, Rust (Actix-web)",
+ "list": {
+      "0": {
+        "title": "Frontend Skills",
+        "description": "I can create beautifully styled web pages using Shadcn UI and build robust SSR-enabled applications using TanStack Router. I am proficient in React.js, Next.js, TypeScript, Tailwind CSS, Vite, Custom Hooks, Zod, and Chart.js to deliver interactive and modern user interfaces."
+      },
+      "1": {
+         "title": "Backend Skills",
+        "description": "I develop scalable backend services with Node.js, Express.js, and NestJS. I implement secure authentication using JWT, manage permissions with RBAC, design REST APIs, handle real-time messaging via NATS, and integrate Telegram Bot APIs. I also work with Rust (Actix-web) for high-performance backend solutions."
+      },
+      "2": {
+        "title": "DevOps & Databases",
+        "description": "I manage databases such as PostgreSQL, MySQL, and MongoDB, implement caching with Redis, and deploy applications using Docker and Nginx. I work confidently with Git & GitHub and Linux (Ubuntu) to ensure smooth development and production workflows."
+      }
+    }
+}

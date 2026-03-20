@@ -1,0 +1,18 @@
+{
+  "title": "Men haqimda",
+  "content": "Men Oʻzbekistonda yashovchi Full Stack dasturchiman, frontend va backend sohalarida keng tajribaga egaman. Zamonaviy texnologiyalar bilan ishlayman: React, Next.js, NestJS, Node.js, Rust (Actix-web).",
+  "list": {
+    "0": {
+      "title": "Frontend Ko‘nikmalari",
+      "description": "Men Shadcn UI yordamida chiroyli web sahifalar yarataman va TanStack Router yordamida SSR qo‘llab-quvvatlanadigan kuchli web ilovalar tuza olaman. React.js, Next.js, TypeScript, Tailwind CSS, Vite, Custom Hooks, Zod va Chart.js bilan interaktiv va zamonaviy interfeyslar yaratishda tajribam bor."
+    },
+    "1": {
+      "title": "Backend Ko‘nikmalari",
+      "description": "Men Node.js, Express.js va NestJS yordamida kengaytiriladigan backend xizmatlarini ishlab chiqaman. JWT orqali xavfsiz autentifikatsiya qilaman, RBAC bilan ruxsatlarni boshqaraman, REST API lar yarataman, NATS orqali real-vaqt xabar almashishni tashkil qilaman va Telegram Bot API ni integratsiya qilaman. Shuningdek, Rust (Actix-web) yordamida yuqori samarali backend yechimlar yarataman."
+    },
+    "2": {
+      "title": "DevOps va Ma’lumotlar Bazasi",
+      "description": "Men PostgreSQL, MySQL va MongoDB bazalarini boshqaraman, Redis orqali keshlashni amalga oshiraman va Docker hamda Nginx yordamida ilovalarni joylashtiraman. Git & GitHub va Linux (Ubuntu) bilan ishlash orqali ishlab chiqish va ishlab chiqarish jarayonlarini silliq amalga oshiraman."
+    }
+  }
+}

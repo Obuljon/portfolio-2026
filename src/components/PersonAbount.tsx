@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 export default function PersonAbount() {
+  const t = useTranslations("home");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -8,15 +10,15 @@ export default function PersonAbount() {
       transition={{ duration: 0.6 }}
     >
       <p className="text-base sm:text-lg md:text-xl font-medium text-[#00004d] mb-3 md:mb-4">
-        Hello, {"I'm John"},
+        {t("content.ferstcontent") + " " + t("person.fname")},
       </p>
       <h1 className="text-[56px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-[0.9] font-black text-[#00004d] mb-8 md:mb-12 tracking-tight">
-        Product
+        {t("content.how")}
         <br />
-        Designer
+        {t("person.job")}
       </h1>
       <p className="text-base sm:text-lg md:text-xl font-medium text-[#00004d] mb-8 md:mb-12">
-        based in Netherland.
+        {t("person.location")}
       </p>
 
       <button className="relative group">

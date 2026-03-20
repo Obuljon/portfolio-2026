@@ -1,0 +1,110 @@
+{
+  "title": "My Work. Here you can explore some of the projects I’ve worked on, showcasing my skills in building responsive frontends, robust backends, and complete full-stack solutions. Each project demonstrates my ability to combine modern technologies to deliver high-quality, performant, and user-friendly applications.",
+  "list": {
+    "0": {
+      "id": 1,
+      "name": "E-Commerce Backend API",
+      "github": "https://github.com/Obuljon/online-market",
+      "type": "Personal",
+      "tech": [
+        "NestJS",
+        "Express.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "JWT"
+      ],
+      "short": "A full-featured e-commerce REST API with advanced role-based access control.",
+      "description": "This project is a backend system for an e-commerce platform. It handles product management, user orders, and authentication. The most important feature is the RBAC (Role-Based Access Control) system which defines four roles: Owner, Admin, Employee, and User — each with strictly defined permissions. All endpoints are secured with JWT authentication and Redis is used for caching product listings and session data."
+    },
+    "1": {
+      "id": 2,
+      "name": "Personal Blog Web Application",
+      "github_backend": "https://github.com/Obuljon/blog-backend",
+      "github_frontend": "https://github.com/Obuljon/blog",
+      "type": "Personal",
+      "tech": [
+        "NestJS",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "JWT",
+        "PostgreSQL"
+      ],
+      "short": "A full-stack blog platform with NestJS backend and Next.js frontend.",
+      "description": "A personal blog platform where users can create, edit, and delete posts and comments. The backend is built with NestJS providing a clean REST API with JWT authentication. The frontend uses Next.js with server-side rendering for fast page loads and better SEO. The UI is built with Shadcn UI and Tailwind CSS for a modern and responsive design."
+    },
+    "2": {
+      "id": 3,
+      "name": "Tic-Tac-Toe Web Game",
+      "github_frontend": "https://github.com/Obuljon/onlinegame-frontend",
+      "github_backend": "https://github.com/Obuljon/onlinegame-backend",
+      "type": "Personal",
+      "tech": ["React.js", "TypeScript"],
+      "short": "An interactive online Tic-Tac-Toe game built with React and TypeScript.",
+      "description": "A classic Tic-Tac-Toe (X and O) game playable in the browser. Built with React.js and TypeScript using a clean component-based architecture. The game includes full win detection logic, turn management, and a responsive UI that works smoothly across all devices. The project has separate frontend and backend repositories."
+    },
+    "3": {
+      "id": 4,
+      "name": "Image Generator Telegram Bot",
+      "github": "https://github.com/Obuljon/bot_telegram",
+      "type": "Personal",
+      "tech": ["NestJS", "Telegram Bot API"],
+      "short": "A Telegram bot that generates and returns images based on a given prompt.",
+      "description": "A personal Telegram bot built with NestJS that takes a text prompt or blog description from the user and returns a generated image as a response. The bot integrates with the Telegram Bot API using NestJS modular architecture, making it scalable and easy to extend. It processes incoming messages, generates the requested image, and sends it back directly in the chat."
+    },
+    "4": {
+      "id": 5,
+      "name": "Rust REST API",
+      "github": "https://github.com/Obuljon/rust-api-tutorial",
+      "type": "Training",
+      "tech": ["Rust", "Actix-web", "PostgreSQL", "JWT"],
+      "short": "A high-performance REST API built with Rust and Actix-web framework.",
+      "description": "A backend REST API built using Rust and the Actix-web framework to practice systems-level programming and high-performance backend development. The API includes full CRUD endpoints, JWT-based authentication, and PostgreSQL integration. This project demonstrates the ability to work with one of the most performant and memory-safe programming languages available today."
+    },
+    "5": {
+      "id": 6,
+      "name": "Real-Time Chat Application",
+      "github": "https://github.com/Obuljon/chat",
+      "type": "Training",
+      "tech": ["Node.js", "React.js", "WebSocket", "Redis"],
+      "short": "A real-time chat application built as a training project.",
+      "description": "A real-time chat application developed during training at AI Softwares Uzbekistan. Users can send and receive messages instantly through a clean and responsive interface. Built with Node.js on the backend and React.js on the frontend. Redis is used for caching to improve performance and message delivery speed."
+    },
+    "6": {
+      "id": 7,
+      "name": "NATS Microservices Backend",
+      "github": "https://github.com/Obuljon/tanining-center",
+      "type": "Training",
+      "tech": ["Node.js", "NATS", "Docker", "Redis"],
+      "short": "A microservices backend simulation built to practice distributed system architecture.",
+      "description": "A practice project built during training at AI Softwares Uzbekistan to simulate a real-world microservices backend architecture. Services communicate with each other using NATS as a message broker. Docker is used for containerizing each microservice independently, and Redis handles caching across services. This project was a hands-on exercise in understanding how large-scale distributed systems are structured and how services communicate."
+    },
+    "7": {
+      "id": 8,
+      "name": "Expense Tracker",
+      "type": "Personal",
+      "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      "short": "A full-stack expense tracking app with user authentication and transaction management.",
+      "description": "A personal finance management application that allows users to track their income and expenses. Built with React.js on the frontend and Node.js with Express.js on the backend. User authentication is handled via JWT tokens and all transaction data is stored in MongoDB. Users can add, view, and manage their financial records through a clean and simple interface."
+    },
+    "8": {
+      "id": 9,
+      "name": "Personal Portfolio Website",
+      "type": "Personal",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Sass",
+        "Pug",
+        "Vite",
+        "Webpack",
+        "Gulp"
+      ],
+      "short": "A responsive personal portfolio website showcasing projects and skills.",
+      "description": "A handcrafted personal portfolio website built without any UI framework to demonstrate core frontend skills. Uses Pug for HTML templating, Sass for structured and maintainable CSS, and Vite along with Webpack and Gulp for an optimized build pipeline. The site is fully responsive and designed to present projects, skills, and contact information in a clean and professional manner."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "person": {
+    "fname": "Obiljon",
+    "lname": "Rahimov",
+    "job": "full stack developer",
+    "location": "O'zbekiston Xorazmdan"
+  },
+  "content": {
+    "ferstcontent": "Salom, men ",
+    "how": "Mahsulot"
+  }
+}

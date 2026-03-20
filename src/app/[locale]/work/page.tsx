@@ -1,16 +1,20 @@
 import type { JSX } from "react";
 import type { Metadata } from "next";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Obil Work",
   description: "FullStack Developer Portfolio",
-
 };
+
 const WORK1 = "https://images.unsplash.com/photo-1604419253748-f9acec6608fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxza2V0Y2hpbmclMjBkZXNpZ24lMjBwcm9jZXNzJTIwbW9ja3VwJTIwc2tldGNoYm9vayUyMHBlbnxlbnwxfHx8fDE3NzE2MzUxNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const WORK2 = "https://images.unsplash.com/photo-1716681863668-640cad27140f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYXB0b3AlMjBkZXNrJTIwY29sb3JmdWwlMjBibG9ja3MlMjBVSSUyMGRlc2lnbiUyMG1vY2t1cHxlbnwxfHx8fDE3NzE2MzUxNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
 export default function Page(): JSX.Element {
+  const t = useTranslations("work");
+
+
   return (
     <main>
        <section id="work" className="relative py-24 sm:py-32 md:py-40 lg:py-48 px-6 sm:px-12 md:px-16 lg:px-24 bg-[#fdfd96] overflow-hidden">
@@ -22,8 +26,8 @@ export default function Page(): JSX.Element {
            <div className="grid md:grid-cols-[1fr_2fr] gap-12 sm:gap-16 md:gap-20 lg:gap-24 mb-12 sm:mb-16 md:mb-20 lg:mb-24">
               <div className="hidden md:block" />
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-[#00004d]/80 font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-              </p>
+                {t("title")}
+                </p>
            </div>
 
            <div className="grid sm:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16">

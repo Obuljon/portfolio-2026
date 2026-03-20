@@ -8,7 +8,8 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useState } from "react";
-
+import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 interface LanguageSelectorProps {
   variant?: "desktop" | "mobile";
 }
@@ -16,18 +17,22 @@ interface LanguageSelectorProps {
 export function LanguageSelector({
   variant = "desktop",
 }: LanguageSelectorProps) {
-  const [language, setLanguage] = useState("en");
-
+  const pathname = usePathname();
+  const [language, setLanguage] = useState(pathname.split("/")[1]);
+  
+  const router = useRouter();
   const languages = [
+    { value: "uz", label: "O'zbek", flag: "🇺🇿" },
+    { value: "ru", label: "Русский", flag: "🇷🇺" },
     { value: "en", label: "English", flag: "🇬🇧" },
-    { value: "es", label: "Español", flag: "🇪🇸" },
-    { value: "fr", label: "Français", flag: "🇫🇷" },
   ];
 
   const handleLanguageChange = (value: string) => {
     setLanguage(value);
-    // Here you would typically update your i18n context or state management
-    console.log("Language changed to:", value);
+   const segments = pathname.split("/");
+    segments[1] = value;
+    const newPath = segments.join("/");
+    router.push(newPath);
   };
 
   if (variant === "mobile") {

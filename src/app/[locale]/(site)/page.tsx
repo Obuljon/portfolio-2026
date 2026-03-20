@@ -1,17 +1,11 @@
 import type { JSX } from "react";
 import type { Metadata } from "next";
 import { ArrowRight, Plus } from "lucide-react";
-import { ImageWithFallback } from "../../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../../../components/figma/ImageWithFallback";
 import PersonAbount from "@/components/PersonAbount";
 import MobilePortrait from "@/components/ MobilePortrait";
 const PORTRAIT =
-  "https://images.unsplash.com/photo-1759405185493-c1ef25745c8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXJseSUyMGhhaXIlMjBtYW4lMjBwb3J0cmFpdCUyMHNtaWxpbmclMjBibGFjayUyMGhhdHxlbnwxfHx8fDE3NzE2MzUxNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-const WORK1 =
-  "https://images.unsplash.com/photo-1604419253748-f9acec6608fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxza2V0Y2hpbmclMjBkZXNpZ24lMjBwcm9jZXNzJTIwbW9ja3VwJTIwc2tldGNoYm9vayUyMHBlbnxlbnwxfHx8fDE3NzE2MzUxNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-const WORK2 =
-  "https://images.unsplash.com/photo-1716681863668-640cad27140f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsYXB0b3AlMjBkZXNrJTIwY29sb3JmdWwlMjBibG9ja3MlMjBVSSUyMGRlc2lnbiUyMG1vY2t1cHxlbnwxfHx8fDE3NzE2MzUxNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-const CONTACT_IMG =
-  "https://images.unsplash.com/photo-1764269832711-5368bb6f5ebf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3VudGFpbiUyMHBlbiUyMG9uJTIwcGFwZXIlMjBiYWNrZ3JvdW5kJTIwbWluaW1hbGlzdHxlbnwxfHx8fDE3NzE2MzUxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+  "/photo_2023-12-01_01-04-19.jpg";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -19,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page(): JSX.Element {
+
   return (
     <main className="pt-16">
       <div className="flex flex-col">

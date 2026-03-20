@@ -1,0 +1,18 @@
+{
+  "title": "Обо мне",
+  "content": "Я Full Stack разработчик из Узбекистана с богатым опытом в frontend и backend разработке. Работаю с современными технологиями: React, Next.js, NestJS, Node.js, Rust (Actix-web).",
+  "list": {
+    "0": {
+      "title": "Навыки Frontend",
+      "description": "Я создаю красиво оформленные веб-страницы с использованием Shadcn UI и строю мощные приложения с поддержкой SSR с помощью TanStack Router. Владею React.js, Next.js, TypeScript, Tailwind CSS, Vite, Custom Hooks, Zod и Chart.js для создания интерактивных и современных интерфейсов."
+    },
+    "1": {
+      "title": "Навыки Backend",
+      "description": "Я разрабатываю масштабируемые серверные решения на Node.js, Express.js и NestJS. Реализую безопасную аутентификацию с помощью JWT, управляю правами через RBAC, проектирую REST API, обрабатываю сообщения в реальном времени через NATS и интегрирую Telegram Bot API. Также использую Rust (Actix-web) для высокопроизводительных backend-решений."
+    },
+    "2": {
+      "title": "DevOps и базы данных",
+      "description": "Я управляю базами данных PostgreSQL, MySQL и MongoDB, реализую кэширование с Redis и разворачиваю приложения с Docker и Nginx. Уверенно работаю с Git & GitHub и Linux (Ubuntu), чтобы обеспечить плавный процесс разработки и развертывания."
+    }
+  }
+}

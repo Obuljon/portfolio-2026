@@ -1,0 +1,110 @@
+{
+  "title": "Mening ishlarim. Bu yerda siz mening ishlagan loyihalarim bilan tanishishingiz mumkin. Loyihalar responsive frontend, mustahkam backend va to‘liq full-stack yechimlar yaratish bo‘yicha ko‘nikmalarimni namoyish etadi. Har bir loyiha zamonaviy texnologiyalar yordamida yuqori sifatli, samarali va foydalanuvchi uchun qulay ilovalarni yaratish qobiliyatimni ko‘rsatadi.",
+  "list": {
+    "0": {
+      "id": 1,
+      "name": "E-Commerce Backend API",
+      "github": "https://github.com/Obuljon/online-market",
+      "type": "Shaxsiy",
+      "tech": [
+        "NestJS",
+        "Express.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "JWT"
+      ],
+      "short": "Kengaytirilgan rol asosidagi kirish nazorati bilan to'liq e-commerce REST API.",
+      "description": "Bu loyiha e-commerce platformasi uchun backend tizimidir. Mahsulotlarni boshqarish, foydalanuvchi buyurtmalari va autentifikatsiyani o'z ichiga oladi. Eng muhim xususiyati — Owner, Admin, Employee va User kabi to'rtta rol bilan RBAC tizimi bo'lib, har biriga qat'iy belgilangan ruxsatlar berilgan. Barcha endpointlar JWT bilan himoyalangan, Redis esa mahsulot ro'yxati va sessiyalarni keshlash uchun ishlatilgan."
+    },
+    "1": {
+      "id": 2,
+      "name": "Shaxsiy Blog Veb Ilovasi",
+      "github_backend": "https://github.com/Obuljon/blog-backend",
+      "github_frontend": "https://github.com/Obuljon/blog",
+      "type": "Shaxsiy",
+      "tech": [
+        "NestJS",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "JWT",
+        "PostgreSQL"
+      ],
+      "short": "NestJS backend va Next.js frontend bilan to'liq blog platformasi.",
+      "description": "Foydalanuvchilar post va izohlarni yaratish, tahrirlash hamda o'chirish imkoniyatiga ega bo'lgan shaxsiy blog platformasi. Backend JWT autentifikatsiyali NestJS REST API asosida qurilgan. Frontend Next.js bilan server tomondan render qilinib, tez sahifa yuklash va yaxshiroq SEO ta'minlanadi. UI Shadcn UI va Tailwind CSS yordamida zamonaviy va moslashuvchan ko'rinishda yaratilgan."
+    },
+    "2": {
+      "id": 3,
+      "name": "X va 0 Veb O'yini",
+      "github_frontend": "https://github.com/Obuljon/onlinegame-frontend",
+      "github_backend": "https://github.com/Obuljon/onlinegame-backend",
+      "type": "Shaxsiy",
+      "tech": ["React.js", "TypeScript"],
+      "short": "React va TypeScript yordamida qurilgan interaktiv onlayn X va 0 o'yini.",
+      "description": "Brauzerda o'ynaladigan klassik X va 0 o'yini. React.js va TypeScript yordamida toza komponent arxitekturasi asosida qurilgan. O'yin to'liq g'alaba aniqlash mantiqi, navbat boshqaruvi va barcha qurilmalarda muammosiz ishlaydigan moslashuvchan UI ni o'z ichiga oladi. Loyihaning frontend va backend uchun alohida repozitoriyalari mavjud."
+    },
+    "3": {
+      "id": 4,
+      "name": "Surat Generatsiya Telegram Bot",
+      "github": "https://github.com/Obuljon/bot_telegram",
+      "type": "Shaxsiy",
+      "tech": ["NestJS", "Telegram Bot API"],
+      "short": "Berilgan matn asosida surat yaratib, Telegram orqali qaytarib beruvchi bot.",
+      "description": "NestJS yordamida qurilgan shaxsiy Telegram bot bo'lib, foydalanuvchi matn yoki blog tavsifi yuborganda surat yaratib, javob sifatida qaytaradi. Bot Telegram Bot API bilan NestJS moduli arxitekturasi orqali integratsiya qilingan va kengaytirish hamda masshtablash osondir. Kiruvchi xabarlarni qayta ishlab, so'ralgan suratni generatsiya qiladi va to'g'ridan-to'g'ri chatga yuboradi."
+    },
+    "4": {
+      "id": 5,
+      "name": "Rust REST API",
+      "github": "https://github.com/Obuljon/rust-api-tutorial",
+      "type": "O'quv",
+      "tech": ["Rust", "Actix-web", "PostgreSQL", "JWT"],
+      "short": "Rust va Actix-web framework yordamida qurilgan yuqori unumli REST API.",
+      "description": "Tizim darajasidagi dasturlash va yuqori unumli backend ishlab chiqishni mashq qilish uchun Rust va Actix-web framework asosida yaratilgan backend REST API. API to'liq CRUD endpointlari, JWT asosidagi autentifikatsiya va PostgreSQL integratsiyasini o'z ichiga oladi. Bu loyiha bugungi kunda mavjud eng samarali va xotira xavfsiz dasturlash tili bilan ishlash qobiliyatini namoyish etadi."
+    },
+    "5": {
+      "id": 6,
+      "name": "Real Vaqt Chat Ilovasi",
+      "github": "https://github.com/Obuljon/chat",
+      "type": "O'quv",
+      "tech": ["Node.js", "React.js", "WebSocket", "Redis"],
+      "short": "O'quv jarayonida yaratilgan real vaqt chat ilovasi.",
+      "description": "AI Softwares Uzbekistan treningi davomida yaratilgan real vaqt chat ilovasi. Foydalanuvchilar toza va moslashuvchan interfeys orqali bir-biriga xabar yuborishi va qabul qilishi mumkin. Backend Node.js, frontend esa React.js asosida qurilgan. Redis xabar yetkazish tezligini oshirish va keshlash uchun ishlatilgan."
+    },
+    "6": {
+      "id": 7,
+      "name": "NATS Mikroservislar Backendi",
+      "github": "https://github.com/Obuljon/tanining-center",
+      "type": "O'quv",
+      "tech": ["Node.js", "NATS", "Docker", "Redis"],
+      "short": "Taqsimlangan tizim arxitekturasini mashq qilish uchun yaratilgan mikroservislar backend simulatsiyasi.",
+      "description": "AI Softwares Uzbekistan treningi davomida haqiqiy mikroservislar backend arxitekturasini simulatsiya qilish uchun yaratilgan mashq loyihasi. Servislar o'rtasidagi aloqa NATS xabarlashuv brokeri orqali amalga oshiriladi. Docker har bir mikroservisni mustaqil ravishda konteynerizatsiya qilish, Redis esa servislar bo'ylab keshlash uchun ishlatilgan. Bu loyiha katta miqyosli taqsimlangan tizimlar qanday tuzilgani va servislar qanday muloqot qilishini amalda o'rganish mashqi bo'ldi."
+    },
+    "7": {
+      "id": 8,
+      "name": "Xarajat Kuzatuvchi",
+      "type": "Shaxsiy",
+      "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      "short": "Foydalanuvchi autentifikatsiyasi va tranzaksiyalarni boshqarish bilan to'liq xarajat kuzatuvchi.",
+      "description": "Foydalanuvchilarga daromad va xarajatlarini kuzatish imkonini beruvchi shaxsiy moliyaviy boshqaruv ilovasi. Frontend React.js, backend esa Node.js va Express.js yordamida qurilgan. Foydalanuvchi autentifikatsiyasi JWT tokenlar orqali amalga oshiriladi va barcha tranzaksiya ma'lumotlari MongoDB da saqlanadi. Foydalanuvchilar o'zlarining moliyaviy yozuvlarini oddiy va qulay interfeys orqali qo'shish, ko'rish va boshqarishi mumkin."
+    },
+    "8": {
+      "id": 9,
+      "name": "Shaxsiy Portfolio Sayti",
+      "type": "Shaxsiy",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Sass",
+        "Pug",
+        "Vite",
+        "Webpack",
+        "Gulp"
+      ],
+      "short": "Loyihalar va ko'nikmalarni namoyish etuvchi moslashuvchan shaxsiy portfolio sayti.",
+      "description": "UI frameworksiz, asosiy frontend ko'nikmalarini namoyish etish uchun qurilgan shaxsiy portfolio sayti. HTML shablonlash uchun Pug, tuzilgan va qo'llab-quvvatlanadigan CSS uchun Sass, optimallashtirilgan build jarayoni uchun esa Vite, Webpack va Gulp ishlatilgan. Sayt to'liq moslashuvchan bo'lib, loyihalar, ko'nikmalar va aloqa ma'lumotlarini toza va professional tarzda taqdim etish uchun mo'ljallangan."
+    }
+  }
+}

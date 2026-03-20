@@ -4,6 +4,7 @@ import { RootState } from "@/lib/redux/store";
 import { useSelector, useDispatch } from "react-redux";
 import { setMobileMenuOpen } from "../lib/redux/features/humburgerSlice";
 import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { LanguageSelector } from "./LanguageSelector";
 export default function Hamburger() {
   const dispatch = useDispatch();
   const mobileMenuOpen = useSelector(
@@ -50,19 +51,22 @@ export default function Hamburger() {
           </Link>
         </div>
         <div className="mt-auto pt-8 border-t border-[#00004d]/10">
-          <div className="flex items-center gap-4 lg:gap-6 border-l border-[#00004d]/20 pl-4 lg:pl-6 ml-2 lg:ml-4">
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              <Linkedin className="size-4" />
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              <Github className="size-4" />
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              <Send className="size-4" />
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              <Mail className="size-4" />
-            </a>
+          <div className="flex flex-col gap-6">
+            <LanguageSelector variant="mobile" />
+            <div className="flex items-center gap-4 lg:gap-6 border-l border-[#00004d]/20 pl-4 lg:pl-6 ml-2 lg:ml-4">
+              <a href="#" className="hover:opacity-60 transition-opacity">
+                <Linkedin className="size-4" />
+              </a>
+              <a href="#" className="hover:opacity-60 transition-opacity">
+                <Github className="size-4" />
+              </a>
+              <a href="#" className="hover:opacity-60 transition-opacity">
+                <Send className="size-4" />
+              </a>
+              <a href="#" className="hover:opacity-60 transition-opacity">
+                <Mail className="size-4" />
+              </a>
+            </div>
           </div>
         </div>
       </nav>

@@ -3,8 +3,7 @@ import { motion } from "motion/react";
 import {  Plus } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 const PORTRAIT =
-  "https://images.unsplash.com/photo-1759405185493-c1ef25745c8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXJseSUyMGhhaXIlMjBtYW4lMjBwb3J0cmFpdCUyMHNtaWxpbmclMjBibGFjayUyMGhhdHxlbnwxfHx8fDE3NzE2MzUxNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-
+"/photo_2023-12-01_01-04-19.jpg"
 {
   /* Mobile Portrait - shown below text on small screens */
 }
