@@ -1,0 +1,8 @@
+{
+  "list": [
+    { "url": "/", "name": "Home" },
+    { "url": "/about", "name": "About" },
+    { "url": "/work", "name": "Work" },
+    { "url": "/blog", "name": "Blog" }
+  ]
+}

@@ -5,13 +5,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { setMobileMenuOpen } from "../lib/redux/features/humburgerSlice";
 import { Github, Linkedin, Mail, Send } from "lucide-react";
 import { LanguageSelector } from "./LanguageSelector";
+import { useTranslations } from "next-intl";
 export default function Hamburger() {
   const dispatch = useDispatch();
   const mobileMenuOpen = useSelector(
     (state: RootState) => state.mobileMenu.isMatch,
   );
-
-  //   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("navbor");
+  const navItems = t.raw("list");
   return (
     <div
       className={`md:hidden fixed inset-0 z-40 bg-[#fdfd96] transition-transform duration-300 ease-in-out ${
@@ -21,34 +22,18 @@ export default function Hamburger() {
     >
       <nav className="flex flex-col h-full px-6 py-8">
         <div className="flex flex-col gap-6">
-          <Link
-            href="/"
-            className={`text-2xl font-bold transition-colors ${mobileMenuOpen ? "opacity-100" : "opacity-60"}`}
-            onClick={() => dispatch(setMobileMenuOpen())}
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="text-2xl font-bold opacity-60 transition-colors"
-            onClick={() => dispatch(setMobileMenuOpen())}
-          >
-            About
-          </Link>
-          <Link
-            href="/work"
-            className="text-2xl font-bold opacity-60 transition-colors"
-            onClick={() => dispatch(setMobileMenuOpen())}
-          >
-            Work
-          </Link>
-          <Link
-            href="/blog"
-            className={`text-2xl font-bold transition-colors ${mobileMenuOpen ? "opacity-100" : "opacity-60"}`}
-            onClick={() => dispatch(setMobileMenuOpen())}
-          >
-            Blog
-          </Link>
+          {navItems.map(
+            ({ url, name }: { url: string; name: string }, index: number) => (
+              <Link
+                key={index}
+                href={url}
+                className={`text-2xl font-bold transition-colors ${mobileMenuOpen ? "opacity-100" : "opacity-60"}`}
+                onClick={() => dispatch(setMobileMenuOpen())}
+              >
+                {name}
+              </Link>
+            ),
+          )}
         </div>
         <div className="mt-auto pt-8 border-t border-[#00004d]/10">
           <div className="flex flex-col gap-6">

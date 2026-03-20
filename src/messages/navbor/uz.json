@@ -1,0 +1,8 @@
+{
+  "list": [
+    { "url": "/", "name": "Bosh sahifa" },
+    { "url": "/about", "name":"Biz haqimizda" },
+    { "url": "/work", "name": "Loyihalar" },
+    { "url": "/blog", "name": "Blog" }
+  ]
+}

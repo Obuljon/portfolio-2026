@@ -5,6 +5,7 @@
       "id": 1,
       "name": "E-Commerce Backend API",
       "github": "https://github.com/Obuljon/online-market",
+      "image": "e-commerce.jpg",
       "type": "Personal",
       "tech": [
         "NestJS",
@@ -21,6 +22,7 @@
     "1": {
       "id": 2,
       "name": "Personal Blog Web Application",
+      "image": "blogger-blogging-website.jpg",
       "github_backend": "https://github.com/Obuljon/blog-backend",
       "github_frontend": "https://github.com/Obuljon/blog",
       "type": "Personal",
@@ -38,6 +40,7 @@
     "2": {
       "id": 3,
       "name": "Tic-Tac-Toe Web Game",
+      "image": "tic-tac-toe.jpg",
       "github_frontend": "https://github.com/Obuljon/onlinegame-frontend",
       "github_backend": "https://github.com/Obuljon/onlinegame-backend",
       "type": "Personal",
@@ -48,6 +51,7 @@
     "3": {
       "id": 4,
       "name": "Image Generator Telegram Bot",
+      "image": "telegram-bot.jpg",
       "github": "https://github.com/Obuljon/bot_telegram",
       "type": "Personal",
       "tech": ["NestJS", "Telegram Bot API"],
@@ -57,15 +61,17 @@
     "4": {
       "id": 5,
       "name": "Rust REST API",
+      "image": "rust-api.png",
       "github": "https://github.com/Obuljon/rust-api-tutorial",
       "type": "Training",
-      "tech": ["Rust", "Actix-web", "PostgreSQL", "JWT"],
+      "tech": ["Rust", "Actix-web", "MongoDB", "JWT"],
       "short": "A high-performance REST API built with Rust and Actix-web framework.",
       "description": "A backend REST API built using Rust and the Actix-web framework to practice systems-level programming and high-performance backend development. The API includes full CRUD endpoints, JWT-based authentication, and PostgreSQL integration. This project demonstrates the ability to work with one of the most performant and memory-safe programming languages available today."
     },
     "5": {
       "id": 6,
       "name": "Real-Time Chat Application",
+      "image": "chat.jpg",
       "github": "https://github.com/Obuljon/chat",
       "type": "Training",
       "tech": ["Node.js", "React.js", "WebSocket", "Redis"],
@@ -75,6 +81,7 @@
     "6": {
       "id": 7,
       "name": "NATS Microservices Backend",
+      "image": "nats.jpg",
       "github": "https://github.com/Obuljon/tanining-center",
       "type": "Training",
       "tech": ["Node.js", "NATS", "Docker", "Redis"],
@@ -84,6 +91,7 @@
     "7": {
       "id": 8,
       "name": "Expense Tracker",
+      "image": "expense-tracker.jpg",
       "type": "Personal",
       "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       "short": "A full-stack expense tracking app with user authentication and transaction management.",
@@ -92,6 +100,7 @@
     "8": {
       "id": 9,
       "name": "Personal Portfolio Website",
+      "image": "portfolio.jpg",
       "type": "Personal",
       "tech": [
         "HTML",

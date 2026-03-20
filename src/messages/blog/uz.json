@@ -1,0 +1,128 @@
+{
+  "list": [
+    {
+      "title": "Node.js qanday ishlaydi? Parda ortidagi jarayonlar va Event Loop siri",
+      "intro": "Ko'pchilik Node.js tez va samarali ekanligini yaxshi biladi. Ammo u aslida qanday ishlaydi? Nega u bitta oqimda (single-thread) ishlashiga qaramay, bir vaqtning o'zida minglab so'rovlarni qotib qolmasdan bajara oladi? Keling, Node.js ning yuragi bo'lmish mexanizmlarni texnik tomondan ko'rib chiqamiz.",
+      "image": "Event-Loop-in-JavaScript.jpg",
+      "sections": [
+        {
+          "heading": "1. Arxitektura poydevori: V8 va libuv",
+          "text": "Node.js asosan ikkita katta texnologiyaga tayanadi: V8 Dvigateli (Google tomonidan C++ tilida yozilgan bo'lib, JavaScript kodini mashina tiliga tez o'giradi) va libuv (Asinxron ishlash va Event Loop mexanizmini ta'minlovchi C++ kutubxonasi)."
+        },
+        {
+          "heading": "2. Single-Threaded va Non-Blocking I/O",
+          "text": "An'anaviy serverlar har bir so'rov uchun alohida oqim ajratadi. Node.js esa barcha so'rovlarni bitta Asosiy Oqimda (Main Thread) qabul qiladi. Lekin og'ir operatsiyalarda bloklanib qolmaydi, ularni darhol orqa fonga topshirib, keyingi mijozga xizmat ko'rsatishda davom etadi."
+        },
+        {
+          "heading": "3. Event Loop - Tizim yuragi",
+          "text": "Orqa fonga jo'natilgan vazifalar bajarib bo'lingach, dastur bu haqida Event Loop orqali xabar topadi. Bu xuddi ofitsiant mijozdan buyurtma olib, tayyor bo'lishini kutib turmasdan oshxonaga berishi va boshqa mijozlarga xizmat ko'rsatishiga o'xshaydi."
+        },
+        {
+          "heading": "4. Node.js aslida 100% Single-Thread emas",
+          "text": "Fayl tizimi (fs) yoki kriptografiya kabi og'ir jarayonlar uchun libuv orqa fonda Thread Pool (Yashirin ishchilar jamoasi) dan foydalanadi. Odatda bu yerda 4 ta qo'shimcha oqim tayyor turadi va Asosiy Oqimni band qilmaslik uchun qora mehnatni o'z bo'yniga oladi."
+        }
+      ],
+      "conclusion": "Xulosa: Node.js ni faqatgina JavaScript-ni serverda ishlatish vositasi deb bilish xato. Uning asosiy kuchi — operatsion tizim resurslaridan aqlli foydalanishi, asinxron arxitekturasi va har qanday so'rovlar oqimiga to'siqsiz yondashishidadir."
+    },
+    {
+      "title": "Next.js: React ilovalarining kelajagi",
+      "intro": "Next.js veb-ilovalar yaratish haqidagi fikrimni butunlay o'zgartirdi. Server tomonida render qilish uchun oddiy framework sifatida boshlangan narsa endi to'liq full-stack vositaga aylandi va men uni deyarli har bir jiddiy loyihada ishlataman.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Nima uchun Next.js?",
+          "text": "Next.js dan oldin SEO-friendly React ilovalari yaratish juda og'ir edi. Webpack sozlash, SSR va routingni qo'lda yozish kerak bo'lardi. Next.js bu muammolarni hal qildi. v13 da App Router kiritilishi bilan dasturchi tajribasi yangi bosqichga ko'tarildi — layoutlar, loading holatlari va error boundarylar birinchi darajali vositaga aylandi."
+        },
+        {
+          "heading": "Server Components va App Router",
+          "text": "React Server Components hamma narsani o'zgartirdi. Komponentlar standart holda serverda ishlaydi — statik kontent uchun clientga JavaScript yuborilmaydi. Men `use client` direktivasini faqat haqiqatan interaktivlik kerak bo'lganda ishlataman. Bu gibrid yondashuv bundle hajmini keskin kamaytiradi va LCP, FID ko'rsatkichlarini yaxshilaydi."
+        },
+        {
+          "heading": "Fayl asosidagi routing va kolokatsiya",
+          "text": "Eng yoqtirgan xususiyatlarimdan biri — routing papka strukturasini to'g'ridan-to'g'ri aks ettiradi. `page.tsx`, `layout.tsx` va `loading.tsx` fayllarini bir papkada saqlash hamma narsani tartibli ushlab turadi. `app/api` ichidagi API routelar alohida server kerak bo'lmay backend endpointlar yaratishga imkon beradi — kichik ilovalar yoki BFF patterni uchun juda qulay."
+        },
+        {
+          "heading": "Tayyor holda yuqori unumdorlik",
+          "text": "Next.js `next/image` orqali avtomatik rasm optimizatsiyasi, `next/font` orqali shrift optimizatsiyasi va aqlli code splitting bilan birga keladi. Bu xususiyatlar yordamida hech qanday qo'shimcha sozlamasdan Lighthouse ballaringizni sezilarli darajada oshirish mumkin. Portfolio loyihamda Next.js ga o'tish orqali performance balim 74 dan 98 ga ko'tarildi."
+        }
+      ],
+      "conclusion": "Next.js — bu shunchaki framework emas, bu to'liq ekosistema. Oddiy blog yoki murakkab SaaS platforma qurayapsizmi, u siz bilan birga o'sadi. Agar siz Next.js ni hali sinab ko'rmagan React dasturchisi bo'lsangiz, bunga eng yaxshi vaqt hozir."
+    },
+    {
+      "title": "NestJS: Kengaytiriladigan Node.js backendlarni to'g'ri yaratish",
+      "intro": "Node.js da backend yaratishni boshlaganimda, Express ishlatardim. U moslashuvchan edi, lekin loyihalar o'sgan sari kod bazasi tartibsizlashdi. Keyin NestJS ni topdim — bu ko'zoynak kiyib ko'rgan kabi his edi.",
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Mantiqiy tuzilma",
+          "text": "NestJS Angular arxitekturasidan ilhomlangan — modullar, controllerlar, servicelar va dependency injection. Birinchi qarashda ko'p yozuv kerak bo'lib ko'rinadi, lekin bu tuzilma loyiha o'sgan sari katta foyda beradi. Har bir qism aniq mas'uliyatga ega, bu esa istalgan dasturchi uchun kod bazasini o'qishni osonlashtiradi."
+        },
+        {
+          "heading": "TypeScript birinchi darajali vosita sifatida",
+          "text": "NestJS butunlay TypeScript bilan qurilgan. `@Controller()`, `@Injectable()` va `@Module()` kabi dekoratorlar kodni ifodali va o'z-o'zini dokumentlashtiradigan qiladi. class-validator orqali DTO validatsiyasi va `@nestjs/swagger` orqali Swagger avtomatik generatsiyasi bilan deyarli tekin to'liq tipli, dokumentlashtirilgan API olasiz."
+        },
+        {
+          "heading": "Mikroservislar va transport qatlamlari",
+          "text": "Meni hayratda qoldirgan narsa NestJS mikroservislar o'rtasidagi aloqani qanchalik osonlashtirgani edi. TCP, Redis, RabbitMQ, Kafka va gRPC uchun o'rnatilgan qo'llab-quvvatlash bilan ular o'rtasida almashtirish minimal kod o'zgarishlarini talab qiladi. Bir xil `@MessagePattern()` dekoratori turli transportlarda ishlaydi — haqiqiy abstraktsiya."
+        },
+        {
+          "heading": "Guard, Interceptor va Pipelar",
+          "text": "NestJS dagi middleware hayot davri inanilmas darajada kuchli. Guardlar so'rov controllerga yetib kelishidan oldin avtorizatsiyani bajaradi. Interceptorlar javoblarni o'zgartirish yoki loglash uchun bajarilishni o'rab oladi. Pipelar kiruvchi ma'lumotlarni tekshiradi va o'zgartiradi. Bu pipeline arxitekturasi autentifikatsiya va loglash kabi kesib o'tadigan muammolar biznes mantiqdan toza ajralib turishi ma'nosini anglatadi."
+        }
+      ],
+      "conclusion": "NestJS Node.js loyihalarimga tartib olib keldi. Agar siz toza arxitektura, TypeScript va kodni saqlash qulayligini qadrласангиз, NestJS siz izlayotgan framework. U production da sinab ko'rilgan va katta faol jamiyat tomonidan qo'llab-quvvatlanadi."
+    },
+    {
+      "title": "React.js: Frontend sayohatim boshlangan joy",
+      "intro": "React vebni abadiy o'zgartirdi. U chiqarilganda virtual DOM bilan komponent asosidagi UI g'oyasi inqilobiy ko'rinardi — va bu haqiqatan shunday edi. Yillar o'tib ham u mening barcha frontend ishlarimning asosi bo'lib qolmoqda.",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Komponent fikrlash modeli",
+          "text": "React kiritgan eng chuqur o'zgarish — komponentlar bilan fikrlash. UI ning har bir qismi o'zining holati va propslariga ega izolyatsiyalangan, qayta ishlatiluvchi birlikdir. Bu fikrlash modeli tugmachadan to butun ilovagacha miqyoslanadi. Uni o'zlashtirgach, UI larni boshqa usulda qurishni tasavvur ham qilolmaysiz."
+        },
+        {
+          "heading": "Hooklar: O'yin o'zgartiruvchi",
+          "text": "Hooklar dan oldin React da holatni boshqarish class komponentlarni, `componentDidMount` kabi lifecycle metodlarni va HOC va render props kabi patternlarni talab qilardi. Hooklar hamma narsani soddalashtirdi. `useState`, `useEffect`, `useContext` va `useReducer` foydalanish holatlarining 95% ni qoplaydi. Custom hooklar komponentlar bo'ylab stateful mantiqni ajratish va ulashishga imkon beradi — men doim ishlatadigan pattern."
+        },
+        {
+          "heading": "Holatni boshqarish: Context vs Zustand vs Redux",
+          "text": "React ilovalarida holatni boshqarish ko'pincha ortiqcha murakkablashtiriladi. Lokal holat uchun `useState` yetarli. Bir necha komponent o'rtasida umumiy holat uchun Context API yaxshi ishlaydi. Murakkab holatli kattaroq ilovalar uchun Zustand ni afzal ko'raman — u yengil, boilerplate talab qilmaydi va butun ilovangizni providerlarga o'ramaydi. Redux kuchli, lekin ko'pgina loyihalarim uchun ortiqcha."
+        },
+        {
+          "heading": "Unumdorlikni optimallashtirish usullari",
+          "text": "React qayta renderlar asosiy unumdorlik muamosidir. Men qimmatbaho komponentlar uchun `React.memo`, hisoblangan qiymatlarni keshlash uchun `useMemo` va funksiya referenslarini barqarorlashtirish uchun `useCallback` ishlatishni o'rgandim. `React.lazy` va `Suspense` bilan code splitting boshlang'ich bundle hajmini kichik saqlaydi. React DevTools bilan profilaktika qilish muammoga aylanishidan oldin keraksiz renderlarni aniqlashga yordam beradi."
+        }
+      ],
+      "conclusion": "React mukammal emas — ekosistema bo'lingan, holatni boshqarish kabi qarorlar o'ylashni talab qiladi. Lekin uning komponent modeli, ulkan jamoasi va moslashuvchanligi meni doim qaytarib keladigan vositaga aylantiradi. Bu har bir zamonaviy frontend dasturchi o'zlashtirishlari kerak bo'lgan poydevor."
+    },
+    {
+      "title": "Rust va Actix-Web: Unumdorlik murosasiz kerak bo'lganda",
+      "intro": "Rust o'rganish dasturchi sifatida qilgan eng qiyin va eng foydali ishim bo'ldi. Borrow checker har qadamda sizga qarshilik qiladi — bir kuni to'satdan qarshilik ko'rsatmay qo'yadi va siz hayotingizdagi eng xavfsiz, eng tez kodni yozayotganingizni tushunasiz.",
+      "image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Nima uchun 2025 yilda Rust?",
+          "text": "Rust Stack Overflow so'rovnomalarida bir necha yil ketma-ket eng yoqtirgan dasturlash tili deb tan olindi. Sababi aniq: u axlat yig'uvchisiz C darajasidagi unumdorlik, ish vaqti (runtime) siz xotira xavfsizligi va egalik (ownership) modeli orqali qo'rquvсиз parallellikni taklif qiladi. Microsoft, Google, Meta, Amazon kabi yirik texnologiya kompaniyalari tizim dasturlash uchun Rust ga katta sarmoya kiritmoqda."
+        },
+        {
+          "heading": "Actix-Web: Eng tez veb framework",
+          "text": "Actix-web TechEmpower benchmarklarida xom o'tkazish qobiliyati bo'yicha doimo birinchi o'rinlarda turadi. Tokio ning async runtime i ustiga qurilgan holda, u oddiy uskunada sekundiga yuz minglab so'rovlarni qayta ishlaydi. Uning aktyor asosidagi arxitekturasi, Rust ning nol xarajatli abstraksiyalari bilan birgalikda, uni yuqori unumdorli API lar, real vaqt tizimlari va kechikishga sezgir xizmatlar uchun ideal qiladi."
+        },
+        {
+          "heading": "Egalik (Ownership), qarz olish (Borrowing) va borrow checker",
+          "text": "Rust ning egalik tizimi uni noyob qiladigan narsadir. Har bir qiymatning yagona egasi bor. Ega ko'lamdan chiqib ketganda, qiymat o'chiriladi — axlat yig'uvchisi kerak emas. Referenslar egalikni olmay turib qiymatni qarz olishga imkon beradi, borrow checker esa bir vaqtda o'zgaruvchan va o'zgarmas referensga ega bo'lolmasligingizni ta'minlaydi. Bu use-after-free, ma'lumotlar poygasi, null pointer dereference kabi xatolar sinflarini butunlay yo'q qiladi."
+        },
+        {
+          "heading": "Actix-Web bilan REST API yaratish",
+          "text": "Actix-web bilan birinchi haqiqiy loyiham yuqori o'tkazuvchanli URL qisqartiruvchi edi. Routelarni sozlash toza va ifodaliroq — handlerlar parametr sifatida extractorlarni qabul qiladigan async funksiyalardir. Serde JSON serializatsiyasini deyarli nol xarajat bilan bajaradi. SQLx kompilyatsiya vaqtida tekshirilgan SQL so'rovlarini ta'minlaydi. Butun stek inanilmas darajada mustahkam va bashorat qilinadigan his berdi. Deploy 5MB dan kam statik bog'langan yagona binary edi."
+        },
+        {
+          "heading": "O'rganish qiyinligi o'zini oqlaydi",
+          "text": "Yolg'on gapirmayman — Rust qiyin. Borrow checker boshqa har qanday tilda kompilyatsiya bo'ladigan kodni rad etadi. Lifetimelar avvaliga chalkashtirib yuboradi. Lekin har bir kompilyator xatosi o'qituvchidir. Bir necha oydan so'ng kompilator bilan kurashishni to'xtatdim va u bilan birgalikda ishlashni boshladim. Endi kodimning to'g'riligiga boshqa har qanday tildagidan ko'ra chinakam ishonchim komilroq."
+        }
+      ],
+      "conclusion": "Rust va Actix-web har bir loyiha uchun emas — lekin ekstremal ishonchlilik va unumdorlik talab qiladiganlar uchun undan yaxshisi yo'q. Rust bilan sayohatim meni tubdan yaxshiroq dasturchi qildi va men uni JavaScript stegim bilan birga yillar davomida ishlatishni rejalashtiryapman."
+    }
+  ]
+}

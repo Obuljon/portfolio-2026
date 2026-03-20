@@ -5,6 +5,7 @@
       "id": 1,
       "name": "E-Commerce Backend API",
       "github": "https://github.com/Obuljon/online-market",
+      "image": "e-commerce.jpg",
       "type": "Shaxsiy",
       "tech": [
         "NestJS",
@@ -21,6 +22,7 @@
     "1": {
       "id": 2,
       "name": "Shaxsiy Blog Veb Ilovasi",
+      "image": "blogger-blogging-website.jpg",
       "github_backend": "https://github.com/Obuljon/blog-backend",
       "github_frontend": "https://github.com/Obuljon/blog",
       "type": "Shaxsiy",
@@ -38,6 +40,7 @@
     "2": {
       "id": 3,
       "name": "X va 0 Veb O'yini",
+      "image": "tic-tac-toe.jpg",
       "github_frontend": "https://github.com/Obuljon/onlinegame-frontend",
       "github_backend": "https://github.com/Obuljon/onlinegame-backend",
       "type": "Shaxsiy",
@@ -48,6 +51,7 @@
     "3": {
       "id": 4,
       "name": "Surat Generatsiya Telegram Bot",
+      "image": "telegram-bot.jpg",
       "github": "https://github.com/Obuljon/bot_telegram",
       "type": "Shaxsiy",
       "tech": ["NestJS", "Telegram Bot API"],
@@ -57,15 +61,17 @@
     "4": {
       "id": 5,
       "name": "Rust REST API",
+      "image": "rust-api.png",
       "github": "https://github.com/Obuljon/rust-api-tutorial",
       "type": "O'quv",
-      "tech": ["Rust", "Actix-web", "PostgreSQL", "JWT"],
+      "tech": ["Rust", "Actix-web", "MongoDB", "JWT"],
       "short": "Rust va Actix-web framework yordamida qurilgan yuqori unumli REST API.",
       "description": "Tizim darajasidagi dasturlash va yuqori unumli backend ishlab chiqishni mashq qilish uchun Rust va Actix-web framework asosida yaratilgan backend REST API. API to'liq CRUD endpointlari, JWT asosidagi autentifikatsiya va PostgreSQL integratsiyasini o'z ichiga oladi. Bu loyiha bugungi kunda mavjud eng samarali va xotira xavfsiz dasturlash tili bilan ishlash qobiliyatini namoyish etadi."
     },
     "5": {
       "id": 6,
       "name": "Real Vaqt Chat Ilovasi",
+      "image": "chat.jpg",
       "github": "https://github.com/Obuljon/chat",
       "type": "O'quv",
       "tech": ["Node.js", "React.js", "WebSocket", "Redis"],
@@ -75,6 +81,7 @@
     "6": {
       "id": 7,
       "name": "NATS Mikroservislar Backendi",
+      "image": "nats.jpg",
       "github": "https://github.com/Obuljon/tanining-center",
       "type": "O'quv",
       "tech": ["Node.js", "NATS", "Docker", "Redis"],
@@ -84,6 +91,7 @@
     "7": {
       "id": 8,
       "name": "Xarajat Kuzatuvchi",
+      "image": "expense-tracker.jpg",
       "type": "Shaxsiy",
       "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       "short": "Foydalanuvchi autentifikatsiyasi va tranzaksiyalarni boshqarish bilan to'liq xarajat kuzatuvchi.",
@@ -92,6 +100,7 @@
     "8": {
       "id": 9,
       "name": "Shaxsiy Portfolio Sayti",
+      "image": "portfolio.jpg",
       "type": "Shaxsiy",
       "tech": [
         "HTML",

@@ -1,14 +1,19 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
- 
-// This function can be marked `async` if using `await` inside
-export function proxy(request: NextRequest) {
-  return NextResponse.redirect(new URL('/home', request.url))
+
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // Agar manzil aynan '/home' bo'lsa, uni '/' ga yo'naltiramiz
+  if (pathname === '/home') {
+    return NextResponse.redirect(new URL('/', request.url))
+  }
+
+  // Boshqa barcha holatlarda so'rovni odatdagidek davom ettiramiz
+  return NextResponse.next();
 }
- 
-// Alternatively, you can use a default export:
-// export default function proxy(request: NextRequest) { ... }
- 
+
+// Config qismi juda muhim, u faqat kerakli manzillarda middleware-ni ishga tushiradi
 export const config = {
-  matcher: '/about/:path*',
+  matcher: ['/home'], // Middleware faqat /home manziliga kirganda ishlaydi
 }

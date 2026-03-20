@@ -1,0 +1,128 @@
+{
+  "list": [
+    {
+      "title": "How does Node.js work? Behind the scenes and the secret of the Event Loop",
+      "intro": "Many people know that Node.js is fast and efficient. But how does it actually work? Why can it handle thousands of concurrent requests without freezing, despite being single-threaded? Let's take a technical look at the mechanisms that form the heart of Node.js.",
+      "image": "Event-Loop-in-JavaScript.jpg",
+      "sections": [
+        {
+          "heading": "1. Architectural Foundation: V8 and libuv",
+          "text": "Node.js relies mainly on two major technologies: the V8 Engine (written in C++ by Google, it quickly compiles JavaScript into machine code) and libuv (a C++ library that provides asynchronous I/O and the Event Loop mechanism)."
+        },
+        {
+          "heading": "2. Single-Threaded and Non-Blocking I/O",
+          "text": "Traditional servers allocate a separate thread for each request. Node.js receives all requests on a single Main Thread. However, it does not block on heavy operations; it offloads them to the background immediately and continues serving the next client."
+        },
+        {
+          "heading": "3. Event Loop - The Heart of the System",
+          "text": "Once background tasks are completed, the application is notified via the Event Loop. This is like a waiter in a restaurant taking an order, handing it to the kitchen without waiting for it to be cooked, and moving on to serve other customers."
+        },
+        {
+          "heading": "4. Node.js is not 100% Single-Threaded",
+          "text": "For heavy tasks like file system (fs) operations or cryptography, libuv uses a background Thread Pool. Typically, 4 extra threads are ready here to take on the heavy lifting so as not to block the Main Thread."
+        }
+      ],
+      "conclusion": "Conclusion: It's a mistake to think of Node.js just as a way to run JavaScript on the server. Its true power lies in its smart use of OS resources, its asynchronous architecture, and its non-blocking approach to handling request streams."
+    },
+    {
+      "title": "Next.js: The Future of React Applications",
+      "intro": "Next.js has completely changed the way I think about building web applications. What started as a simple server-side rendering framework has evolved into a full-stack powerhouse that I now use for almost every serious project.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Why Next.js?",
+          "text": "Before Next.js, building SEO-friendly React apps was painful. You had to configure webpack, set up SSR manually, and handle routing yourself. Next.js eliminated all that boilerplate. With App Router introduced in v13, the developer experience reached a whole new level — layouts, loading states, and error boundaries all became first-class citizens."
+        },
+        {
+          "heading": "Server Components & the App Router",
+          "text": "React Server Components changed everything. By default, components run on the server — meaning zero JavaScript sent to the client for static content. I use the `use client` directive only when I truly need interactivity. This hybrid approach drastically reduces bundle sizes and improves performance metrics like LCP and FID."
+        },
+        {
+          "heading": "File-based Routing & Colocation",
+          "text": "One of my favorite features is how routing simply mirrors the folder structure. Placing `page.tsx`, `layout.tsx`, and `loading.tsx` in the same directory keeps everything organized. API routes inside the `app/api` folder let me build backend endpoints without a separate server — perfect for smaller applications or BFF (Backend For Frontend) patterns."
+        },
+        {
+          "heading": "Performance Out of the Box",
+          "text": "Next.js comes with automatic image optimization via `next/image`, font optimization via `next/font`, and smart code splitting. These features alone can push your Lighthouse scores significantly higher without any extra configuration. In my portfolio project, I went from a 74 to a 98 performance score just by migrating to Next.js."
+        }
+      ],
+      "conclusion": "Next.js is not just a framework — it's a complete ecosystem. Whether you're building a simple blog or a complex SaaS platform, it scales with you. If you're a React developer who hasn't tried Next.js yet, there's no better time than now."
+    },
+    {
+      "title": "NestJS: Building Scalable Node.js Backends the Right Way",
+      "intro": "When I first started building backends with Node.js, I used Express. It was flexible, but as projects grew, the codebase became messy. Then I discovered NestJS — and it felt like putting on glasses for the first time.",
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Structure That Makes Sense",
+          "text": "NestJS is heavily inspired by Angular's architecture — modules, controllers, services, and dependency injection. At first glance it seems verbose, but this structure pays off enormously as the project scales. Every piece has a clear responsibility, making the codebase readable for any developer joining the team."
+        },
+        {
+          "heading": "TypeScript as a First-Class Citizen",
+          "text": "NestJS is built entirely with TypeScript. Decorators like `@Controller()`, `@Injectable()`, and `@Module()` make the code expressive and self-documenting. Combined with class-validator for DTO validation and Swagger auto-generation via `@nestjs/swagger`, you get a fully typed, documented API almost for free."
+        },
+        {
+          "heading": "Microservices & Transport Layers",
+          "text": "One thing that impressed me was how easy NestJS makes microservice communication. With built-in support for TCP, Redis, RabbitMQ, Kafka, and gRPC as transport layers, switching between them requires minimal code changes. The same `@MessagePattern()` decorator works across different transports — true abstraction."
+        },
+        {
+          "heading": "Guards, Interceptors & Pipes",
+          "text": "The middleware lifecycle in NestJS is incredibly powerful. Guards handle authorization before a request reaches the controller. Interceptors wrap around execution to transform responses or add logging. Pipes validate and transform incoming data. This pipeline architecture means cross-cutting concerns like authentication and logging stay cleanly separated from business logic."
+        }
+      ],
+      "conclusion": "NestJS brought order to my Node.js projects. If you value clean architecture, TypeScript, and maintainability, NestJS is the framework you've been looking for. It's production-proven and backed by a large, active community."
+    },
+    {
+      "title": "React.js: Where My Frontend Journey Began",
+      "intro": "React changed the web forever. When it was released, the idea of a component-based UI with a virtual DOM seemed revolutionary — and it was. Years later, it remains the foundation of my entire frontend work.",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "The Component Mental Model",
+          "text": "The most profound shift React introduced is thinking in components. Every piece of UI is an isolated, reusable unit with its own state and props. This mental model scales from a button to an entire application. Once you internalize it, you can't imagine building UIs any other way."
+        },
+        {
+          "heading": "Hooks: The Game Changer",
+          "text": "Before hooks, managing state in React required class components, lifecycle methods like `componentDidMount`, and patterns like HOCs and render props. Hooks simplified everything. `useState`, `useEffect`, `useContext`, and `useReducer` cover 95% of use cases. Custom hooks let you extract and share stateful logic across components — a pattern I use constantly."
+        },
+        {
+          "heading": "State Management: Context vs Zustand vs Redux",
+          "text": "State management is often over-engineered in React apps. For local state, `useState` is enough. For shared state between a few components, Context API works great. For larger applications with complex state, I prefer Zustand — it's lightweight, requires no boilerplate, and doesn't wrap your entire app in providers. Redux is powerful but overkill for most projects I build."
+        },
+        {
+          "heading": "Performance Optimization Techniques",
+          "text": "React re-renders are the main performance challenge. I've learned to use `React.memo` for expensive components, `useMemo` to cache computed values, and `useCallback` to stabilize function references. Code splitting with `React.lazy` and `Suspense` keeps initial bundle sizes small. Profiling with React DevTools helps identify unnecessary renders before they become problems."
+        }
+      ],
+      "conclusion": "React is not perfect — the ecosystem is fragmented, and decisions like state management require thought. But its component model, massive community, and flexibility make it the tool I always return to. It's the foundation every modern frontend developer should master."
+    },
+    {
+      "title": "Rust & Actix-Web: When Performance Is Non-Negotiable",
+      "intro": "Learning Rust was the hardest and most rewarding thing I've done as a developer. The borrow checker fights you at every step — until suddenly it doesn't, and you realize you're writing the safest, fastest code of your career.",
+      "image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=1200&q=80",
+      "sections": [
+        {
+          "heading": "Why Rust in 2025?",
+          "text": "Rust has been voted the most loved programming language for many consecutive years on Stack Overflow surveys. The reason is clear: it offers C-level performance without garbage collection, memory safety without a runtime, and fearless concurrency through its ownership model. Major tech companies — Microsoft, Google, Meta, Amazon — are all investing heavily in Rust for systems programming."
+        },
+        {
+          "heading": "Actix-Web: The Fastest Web Framework",
+          "text": "Actix-web consistently tops TechEmpower benchmarks for raw throughput. Built on Tokio's async runtime, it handles hundreds of thousands of requests per second on modest hardware. Its actor-based architecture, combined with Rust's zero-cost abstractions, makes it ideal for high-performance APIs, real-time systems, and latency-sensitive services."
+        },
+        {
+          "heading": "Ownership, Borrowing & the Borrow Checker",
+          "text": "Rust's ownership system is what makes it unique. Every value has a single owner. When the owner goes out of scope, the value is dropped — no garbage collector needed. References allow borrowing a value without taking ownership, and the borrow checker enforces that you can't have a mutable and immutable reference at the same time. This eliminates entire classes of bugs: use-after-free, data races, null pointer dereferences."
+        },
+        {
+          "heading": "Building a REST API with Actix-Web",
+          "text": "My first real project with Actix-web was a high-throughput URL shortener. Setting up routes is clean and expressive — handlers are async functions that take extractors as parameters. Serde handles JSON serialization at near-zero cost. SQLx provides compile-time verified SQL queries. The whole stack felt incredibly solid and predictable. Deployment was a single statically-linked binary under 5MB."
+        },
+        {
+          "heading": "The Learning Curve Is Worth It",
+          "text": "I won't lie — Rust is hard. The borrow checker rejects code that would compile fine in any other language. Lifetimes are confusing at first. But every compiler error is a teacher. After a few months, I stopped fighting the compiler and started working with it. Now I feel genuinely more confident about the correctness of my code than in any other language."
+        }
+      ],
+      "conclusion": "Rust and Actix-web are not for every project — but for the ones that need extreme reliability and performance, there's nothing better. My journey with Rust has made me a fundamentally better programmer, and I plan to keep using it alongside my JavaScript stack for years to come."
+    }
+  ]
+}

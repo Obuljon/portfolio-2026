@@ -15,6 +15,7 @@ import { getMessages } from "next-intl/server";
 import PersonNav from "@/components/PersonNav";
 import { HydrationGuard } from "@/components/HydrationGuard";
 import Footer from "@/components/Footer";
+import Navbor from "@/components/Navbor";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -60,54 +61,35 @@ export default async function RootLayout({
                   <PersonNav />
                   {/* Desktop Navigation */}
                   <nav className="hidden md:flex items-center gap-8 lg:gap-12 pointer-events-auto">
-                    <div className="flex items-center gap-6 lg:gap-8">
-                      <Link
-                        href="/"
-                        className={`text-sm font-semibold transition-colors hover:opacity-70 ${true ? "opacity-100" : "opacity-60"}`}
-                      >
-                        Home
-                      </Link>
-                      <Link
-                        href="/about"
-                        className="text-sm font-semibold transition-colors hover:opacity-70 opacity-60"
-                      >
-                        About
-                      </Link>
-                      <Link
-                        href="/work"
-                        className="text-sm font-semibold transition-colors hover:opacity-70 opacity-60"
-                      >
-                        Work
-                      </Link>
-                      <Link
-                        href="/blog"
-                        className={`text-sm font-semibold transition-colors hover:opacity-70 ${true ? "opacity-100" : "opacity-60"}`}
-                      >
-                        Blog
-                      </Link>
-                    </div>
+                    <Navbor />
                     <div className="flex items-center gap-4 lg:gap-6 border-l border-[#00004d]/20 pl-4 lg:pl-6 ml-2 lg:ml-4">
                       <LanguageSelector variant="desktop" />
                       <a
-                        href="#"
+                        href="https://linkedin.com/in/obul-rakhim-3b293a26b"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:opacity-60 transition-opacity"
                       >
                         <Linkedin className="size-4" />
                       </a>
                       <a
-                        href="#"
+                        href="https://github.com/Obuljon"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:opacity-60 transition-opacity"
                       >
                         <Github className="size-4" />
                       </a>
                       <a
-                        href="#"
+                        href="https://t.me/OBUL_dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:opacity-60 transition-opacity"
                       >
                         <Send className="size-4" />
                       </a>
                       <a
-                        href="#"
+                        href="mailto:rahmovabul2@gmail.com"
                         className="hover:opacity-60 transition-opacity"
                       >
                         <Mail className="size-4" />

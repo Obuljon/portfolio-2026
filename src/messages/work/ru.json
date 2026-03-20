@@ -5,6 +5,7 @@
       "id": 1,
       "name": "E-Commerce Backend API",
       "github": "https://github.com/Obuljon/online-market",
+      "image": "e-commerce.jpg",
       "type": "Личный",
       "tech": [
         "NestJS",
@@ -21,6 +22,7 @@
     "1": {
       "id": 2,
       "name": "Персональное блог-приложение",
+      "image": "blogger-blogging-website.jpg",
       "github_backend": "https://github.com/Obuljon/blog-backend",
       "github_frontend": "https://github.com/Obuljon/blog",
       "type": "Личный",
@@ -38,6 +40,7 @@
     "2": {
       "id": 3,
       "name": "Веб-игра Крестики-Нолики",
+      "image": "tic-tac-toe.jpg",
       "github_frontend": "https://github.com/Obuljon/onlinegame-frontend",
       "github_backend": "https://github.com/Obuljon/onlinegame-backend",
       "type": "Личный",
@@ -48,6 +51,7 @@
     "3": {
       "id": 4,
       "name": "Telegram-бот для генерации изображений",
+      "image": "telegram-bot.jpg",
       "github": "https://github.com/Obuljon/bot_telegram",
       "type": "Личный",
       "tech": ["NestJS", "Telegram Bot API"],
@@ -57,15 +61,17 @@
     "4": {
       "id": 5,
       "name": "Rust REST API",
+      "image": "rust-api.png",
       "github": "https://github.com/Obuljon/rust-api-tutorial",
       "type": "Учебный",
-      "tech": ["Rust", "Actix-web", "PostgreSQL", "JWT"],
+      "tech": ["Rust", "Actix-web", "MongoDB", "JWT"],
       "short": "Высокопроизводительный REST API, построенный на Rust и фреймворке Actix-web.",
       "description": "Серверный REST API, созданный с использованием Rust и фреймворка Actix-web для практики системного программирования и высокопроизводительной бэкенд-разработки. API включает полный набор CRUD-эндпоинтов, JWT-аутентификацию и интеграцию с PostgreSQL. Проект демонстрирует умение работать с одним из самых производительных и безопасных по памяти языков программирования на сегодняшний день."
     },
     "5": {
       "id": 6,
       "name": "Чат-приложение в реальном времени",
+      "image": "chat.jpg",
       "github": "https://github.com/Obuljon/chat",
       "type": "Учебный",
       "tech": ["Node.js", "React.js", "WebSocket", "Redis"],
@@ -75,6 +81,7 @@
     "6": {
       "id": 7,
       "name": "NATS Микросервисный бэкенд",
+      "image": "nats.jpg",
       "github": "https://github.com/Obuljon/tanining-center",
       "type": "Учебный",
       "tech": ["Node.js", "NATS", "Docker", "Redis"],
@@ -84,6 +91,7 @@
     "7": {
       "id": 8,
       "name": "Трекер расходов",
+      "image": "expense-tracker.jpg",
       "type": "Личный",
       "tech": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       "short": "Полностековое приложение для учёта расходов с аутентификацией и управлением транзакциями.",
@@ -92,6 +100,7 @@
     "8": {
       "id": 9,
       "name": "Личный сайт-портфолио",
+      "image": "portfolio.jpg",
       "type": "Личный",
       "tech": [
         "HTML",
